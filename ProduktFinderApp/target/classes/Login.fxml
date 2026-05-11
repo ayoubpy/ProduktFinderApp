@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="produktfinder.LoginController"
+            stylesheets="@style.css"
+            prefWidth="450.0" prefHeight="500.0">
+    <children>
+        <VBox spacing="18" alignment="CENTER" layoutX="40" layoutY="40" maxWidth="370" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="30.0">
+            <ImageView fx:id="logoImage" fitHeight="80" fitWidth="80">
+                <image>
+                    <Image url="@produktfinder/bilder/login_logo.png" preserveRatio="true"/>
+                </image>
+            </ImageView>
+
+            <Label text="Login" styleClass="title"/>
+            <TextField fx:id="usernameField" promptText="Benutzername" maxWidth="300" />
+            <PasswordField fx:id="passwordField" promptText="Passwort" maxWidth="300" />
+            <Button text="Anmelden" onAction="#handleLogin" maxWidth="300" />
+            <Label fx:id="errorLabel" id="errorLabel" />
+        </VBox>
+    </children>
+</AnchorPane>

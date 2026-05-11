@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="produktfinder.WarenkorbController"
+            prefWidth="400" prefHeight="300">
+
+    <VBox spacing="10" layoutX="10" layoutY="10" prefWidth="380">
+        <Label text="🛒 Warenkorbübersicht" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn fx:id="colName" text="Produkt" prefWidth="130"/>
+                <TableColumn fx:id="colMenge" text="Menge" prefWidth="100"/>
+                <TableColumn fx:id="colPreis" text="Preis (€)" prefWidth="100"/>
+                <TableColumn fx:id="colRegal" text="Regal" />
+            </columns>
+        </TableView>
+
+        <Label fx:id="gesamtLabel" text="Gesamt: 0,00 €" style="-fx-font-weight: bold;"/>
+        <HBox spacing="10">
+            <Button text="🗑️ Entfernen" onAction="#handleEntfernen"/>
+            <Button text="Schließen" onAction="#handleSchliessen"/>
+        </HBox>
+
+    </VBox>
+</AnchorPane>

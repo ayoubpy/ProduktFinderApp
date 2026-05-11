@@ -1,0 +1,99 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #f0f2f5, #dce3ec);
+}
+
+/* Hauptcontainer */
+.hauptbereich {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff, #f0f4f8);
+    -fx-padding: 24;
+    -fx-spacing: 20;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 10, 0, 0, 4);
+}
+
+/* Eingabe-Boxen */
+VBox {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 14;
+    -fx-padding: 24;
+    -fx-spacing: 14;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.08), 12, 0, 0, 4);
+}
+
+/* Standard-Label */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2e3a59;
+}
+
+/* Titel-Label */
+.label.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1c1f26;
+}
+
+/* Hinweisbox (z. B. Angebote) */
+.hinweis-box {
+    -fx-background-color: #fff9db;
+    -fx-border-color: #ffe58f;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 10;
+    -fx-padding: 14;
+}
+
+.label.hinweis-text {
+    -fx-text-fill: #8c6d1f;
+    -fx-font-size: 14px;
+}
+
+.label.hinweis-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8c6d1f;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #3f87f5, #2563eb);
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-font-size: 14px;
+    -fx-padding: 10 24 10 24;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 4, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #1e64d1, #1e40af);
+}
+
+/* Textfelder */
+.text-field, .password-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #d0d7e2;
+    -fx-padding: 10;
+    -fx-font-size: 13px;
+    -fx-background-color: #f5f7fa;
+    -fx-text-fill: #2e3a59;
+}
+
+/* Fehlermeldung */
+#errorLabel {
+    -fx-text-fill: #d93025;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* ScrollPane und Bildbereich */
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-padding: 10;
+}
+
+.flow-pane {
+    -fx-padding: 10;
+    -fx-hgap: 12;
+    -fx-vgap: 12;
+}

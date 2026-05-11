@@ -1,0 +1,130 @@
+{
+  "apfel": {
+    "name": "Apfel",
+    "bildpfad": "bilder/apfel.png",
+    "regal": "Regal A1",
+    "preis": 2.49,
+    "bestand": 10,
+    "kategorie": "Obst"
+  },
+  "banane": {
+    "name": "Banane",
+    "bildpfad": "bilder/banane.png",
+    "regal": "Regal A2",
+    "preis": 1.99,
+    "bestand": 15,
+    "kategorie": "Obst"
+  },
+  "birne": {
+    "name": "Birne",
+    "bildpfad": "bilder/birne.png",
+    "regal": "Regal A3",
+    "preis": 2.29,
+    "bestand": 12,
+    "kategorie": "Obst"
+  },
+  "orange": {
+    "name": "Orange",
+    "bildpfad": "bilder/orange.png",
+    "regal": "Regal A4",
+    "preis": 2.59,
+    "bestand": 8,
+    "kategorie": "Obst"
+  },
+  "karotte": {
+    "name": "Karotte",
+    "bildpfad": "bilder/karotte.png",
+    "regal": "Regal B1",
+    "preis": 1.49,
+    "bestand": 20,
+    "kategorie": "Gemüse"
+  },
+  "tomate": {
+    "name": "Tomate",
+    "bildpfad": "bilder/tomate.png",
+    "regal": "Regal B2",
+    "preis": 2.19,
+    "bestand": 18,
+    "kategorie": "Gemüse"
+  },
+  "salat": {
+    "name": "Salat",
+    "bildpfad": "bilder/salat.png",
+    "regal": "Regal B3",
+    "preis": 1.29,
+    "bestand": 10,
+    "kategorie": "Gemüse"
+  },
+  "gurke": {
+    "name": "Gurke",
+    "bildpfad": "bilder/gurke.png",
+    "regal": "Regal B4",
+    "preis": 1.79,
+    "bestand": 14,
+    "kategorie": "Gemüse"
+  },
+  "huhn": {
+    "name": "Huhn",
+    "bildpfad": "bilder/huhn.png",
+    "regal": "Regal C1",
+    "preis": 5.49,
+    "bestand": 6,
+    "kategorie": "Fleisch"
+  },
+  "pute": {
+    "name": "Pute",
+    "bildpfad": "bilder/pute.png",
+    "regal": "Regal C2",
+    "preis": 6.29,
+    "bestand": 5,
+    "kategorie": "Fleisch"
+  },
+  "rind": {
+    "name": "Rind",
+    "bildpfad": "bilder/rind.png",
+    "regal": "Regal C3",
+    "preis": 7.99,
+    "bestand": 4,
+    "kategorie": "Fleisch"
+  },
+  "schwein": {
+    "name": "Schwein",
+    "bildpfad": "bilder/schwein.png",
+    "regal": "Regal C4",
+    "preis": 5.89,
+    "bestand": 7,
+    "kategorie": "Fleisch"
+  },
+  "wasser": {
+    "name": "Wasser",
+    "bildpfad": "bilder/wasser.png",
+    "regal": "Regal D1",
+    "preis": 0.99,
+    "bestand": 25,
+    "kategorie": "Getränke"
+  },
+  "cola": {
+    "name": "Cola",
+    "bildpfad": "bilder/cola.png",
+    "regal": "Regal D2",
+    "preis": 1.49,
+    "bestand": 22,
+    "kategorie": "Getränke"
+  },
+  "saft": {
+    "name": "Saft",
+    "bildpfad": "bilder/saft.png",
+    "regal": "Regal D3",
+    "preis": 1.99,
+    "bestand": 20,
+    "kategorie": "Getränke"
+  },
+  "tee": {
+    "name": "Tee",
+    "bildpfad": "bilder/tee.png",
+    "regal": "Regal D4",
+    "preis": 2.99,
+    "bestand": 15,
+    "kategorie": "Getränke"
+  }
+}

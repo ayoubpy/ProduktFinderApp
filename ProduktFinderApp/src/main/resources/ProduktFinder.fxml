@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hauptbereich"  styleClass="hauptbereich" spacing="20"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="produktfinder.ProduktFinderController">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+    <!-- LINKER BEREICH MIT SCROLL -->
+    <ScrollPane fitToWidth="true" prefWidth="350" styleClass="scroll-pane">
+    <VBox spacing="15">
+        <!-- Hinweisbox -->
+        <VBox spacing="10" styleClass="hinweis-box">
+            <Label text="⭐ Angebote des Tages ⭐" styleClass="hinweis-title"/>
+            <Label text="Heute im Angebot: Frische Tomaten &amp; Orangensaft!" styleClass="hinweis-text"/>
+        </VBox>
+
+        <!-- Produktsuche -->
+        <VBox spacing="10">
+            <Label text="Kategorie wählen:"/>
+            <ComboBox fx:id="kategorieBox"/>
+            <TextField fx:id="nameField" promptText="Produktname eingeben..." />
+            <Button fx:id="suchenButton" text="Suchen" onAction="#onSuchen"/>
+        </VBox>
+
+        <!-- Ergebnisbereich -->
+        <VBox spacing="10">
+            <Label fx:id="meldungLabel"/>
+            <Label fx:id="regalLabel"/>
+            <Label fx:id="preisProKgLabel"/>
+            <TextField fx:id="mengeField" promptText="Menge"/>
+            <Button fx:id="berechnenButton" text="Preis berechnen" onAction="#berechnePreis"/>
+            <Button text="In den Warenkorb" onAction="#handleInWarenkorb"/>
+            <Button text="🛒 Warenkorb anzeigen" onAction="#zeigeWarenkorb"/>
+            <Label fx:id="gesamtpreisLabel"/>
+        </VBox>
+    </VBox>
+
+    </ScrollPane>
+
+    <!-- Produktbilder -->
+    <ScrollPane prefHeight="300" fitToWidth="true" styleClass="scroll-pane">
+        <FlowPane fx:id="bildContainer" styleClass="flow-pane"/>
+    </ScrollPane>
+</HBox>
